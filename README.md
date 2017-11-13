@@ -18,7 +18,7 @@ catch ( SOME_EXCEPTION_TYPE exception ) {
 
 Use your programming IDE to create a new project. Name your project PlayerStats. In the main method, declare and instantiate two arrays of size 80. One array to hold the player’s name (names) and another array to hold the player’s integer high game (scores). These arrays are considered parallel because corresponding elements in the arrays refer to the same player. For example, the high score in scores[15] belongs to the player in names[15]. So, if you ever move a player name to another location in the names array (for example, during sorting), you must also move the score to the same location in the scores array to keep them synchronized.
 
-Figure01 HERE
+![Figure01](https://github.com/NCATCS/images/blob/master/Figure01.png)
 
 For each of the following problems, you should modify the main method to invoke the method and show output that proves that your method is working correctly.
 
