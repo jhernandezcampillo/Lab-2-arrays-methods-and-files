@@ -1,9 +1,8 @@
-# Lab-2
-## Arrays Methods and Files
+# Arrays Methods and Files Lab
 
-This is the second lab for COMP 167 Computer Program Design at North Carolina A&T State University
+### This is a lab for COMP 167 Computer Program Design at North Carolina A&T State University
 
-Instructor: Dr. Kelvin Bryant - ksbryant@ncat.edu
+### Instructor: Dr. Kelvin Bryant - ksbryant@ncat.edu
 
 This lab requires you to write methods to read and manipulate data that is stored in a text file. It is designed to give you more hands on practice with arrays and methods before Classes and Objects are reintroduced. You will also read and write data to a file using exception handling (try/catch block).
 
