@@ -28,6 +28,8 @@ public class PlayerStats {
         output(names, scores);
         
         System.out.println("\n"+"Average: " + scoreAvg(scores) +"\n");
+        
+        sortInfo(scores,names);
     }
     
     public static void readFile (String [] names, int [] scores, String filename){
@@ -68,4 +70,23 @@ public class PlayerStats {
         return (double) sum/scores.length;
     }
     
+    public static void sortInfo (int [] scores, String [] names){
+        int tempScore = 0;
+        String tempName ="";
+        
+        for(int i = 0; i < 80; i++){
+            for(int j = 0; j < 80; j++){
+                if (scores[j] < scores[i]){
+                    tempScore = scores[j];
+                    tempName = names[j];
+                    
+                    scores[j] = scores[i];
+                    names[j] = names[i];
+                    scores[i] = tempScore;
+                    names[i] = tempName;
+                    
+                }
+            }
+        }
+    }
 }
