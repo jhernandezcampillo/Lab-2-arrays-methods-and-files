@@ -30,6 +30,8 @@ public class PlayerStats {
         System.out.println("\n"+"Average: " + scoreAvg(scores) +"\n");
         
         sortInfo(scores,names);
+        
+        topBest(scores, names, 10);
     }
     
     public static void readFile (String [] names, int [] scores, String filename){
@@ -89,4 +91,15 @@ public class PlayerStats {
             }
         }
     }
-}
+    
+    public static void topBest (int [] scores, String [] names, int topX){
+        String board = String.format("Top %d players", topX);
+        for(int i =0; i < topX; i++){
+            String outName = String.format("%-20s %d", names[i], scores[i]);
+            System.out.println(outName);
+            
+        }
+        }
+
+    }
+
