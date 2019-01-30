@@ -26,6 +26,8 @@ public class PlayerStats {
         //System.out.print("done");
         
         output(names, scores);
+        
+        System.out.println("\n"+"Average: " + scoreAvg(scores) +"\n");
     }
     
     public static void readFile (String [] names, int [] scores, String filename){
@@ -56,6 +58,14 @@ public class PlayerStats {
             String nameDisplay = String.format("%-20s %d", nameVar[i], scoreVar[i]);
             System.out.println(nameDisplay);
         }
+    }
+    
+    public static double scoreAvg (int [] scores){
+        int sum = 0;
+        for (int i = 0; i < scores.length; i++){
+            sum += scores[i];
+        }
+        return (double) sum/scores.length;
     }
     
 }
