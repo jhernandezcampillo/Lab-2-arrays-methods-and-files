@@ -23,7 +23,9 @@ public class PlayerStats {
         int [] scores = new int [80];
         
         readFile(names, scores, args[0]);
-        System.out.print("done");
+        //System.out.print("done");
+        
+        output(names, scores);
     }
     
     public static void readFile (String [] names, int [] scores, String filename){
@@ -46,6 +48,14 @@ public class PlayerStats {
             System.out.print("Error");
         }
         
+    }
+    
+    public static void output (String[] nameVar, int[] scoreVar){
+        
+        for (int i = 0; i < scoreVar.length; i++){
+            String nameDisplay = String.format("%-20s %d", nameVar[i], scoreVar[i]);
+            System.out.println(nameDisplay);
+        }
     }
     
 }
